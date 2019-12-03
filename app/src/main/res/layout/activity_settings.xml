@@ -10,7 +10,7 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintTop_toTopOf="parent">
 
     <EditText
             android:layout_width="wrap_content"
@@ -28,15 +28,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
-
             android:ems="10"
-            android:id="@+id/editY" android:layout_weight="1"/>
+            android:id="@+id/editY"
+            android:layout_weight="1"/>
     <Button
             android:text="Add point"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:id="@+id/addPoint"
-    />
+            android:id="@+id/addPoint"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
