@@ -1,1 +1,1 @@
-#MultiGraph
+#GraphTest
