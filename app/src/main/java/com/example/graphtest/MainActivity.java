@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addPoint = (Button)  findViewById(R.id.startProcess);
-        editX = (EditText) findViewById(R.id.editX);
-        editY = (EditText) findViewById(R.id.editY);
+        //editX = (EditText) findViewById(R.id.editX);
+        //editY = (EditText) findViewById(R.id.editY);
         graph = (GraphView) findViewById(R.id.graph);
         //dataPoints = generateData();
         //series = new LineGraphSeries<DataPoint>(dataPoints);
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (item.getItemId()){
             case R.id.open_settings:
 
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(this, PrefActivity.class);
                 startActivity(intent);
                 return true;
 
