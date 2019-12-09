@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+        xmlns:android="http://schemas.android.com/apk/res/android" android:title="Pref">
     <CheckBoxPreference
-        android:key="pref_sync"
-        android:title="CheckBox"
-        android:defaultValue="true"/>
+            android:key="pref_sync"
+            android:title="CheckBox"
+            android:defaultValue="true"/>
     <SwitchPreference
-        android:key="pref_switch"
-        android:title="Switch"
-        android:defaultValue="true"/>
+            android:key="pref_switch"
+            android:title="Switch"
+            android:defaultValue="true"/>
     <ListPreference
-    android:key="pref_list"
-    android:title="ListPref"
-    />
+            android:key="pref_list"
+            android:title="ListPref"
+            android:entries="@array/listOptions"
+            android:entryValues="@array/listValues"/>
+    <EditTextPreference
+            android:key="pref_edit"
+            android:title="Edit"
+
+            android:editable="true"/>
+
 
 </PreferenceScreen>

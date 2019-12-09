@@ -81,29 +81,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
+        for (int i= 0; i<100; i++) {
+            series.appendData(generateDataPoint(), true, 100);
 
-                    series.appendData(generateDataPoint(),true,100);
+            //series.
+        }
 
 
-               // for(int i = 0; i<100; i++)
-//                    runOnUiThread(new Runnable() {
-//                        @Override
-//                        public void run() {
+//
 //
 //                            series.appendData(generateDataPoint(),true,100);
 //
-//                        }
-//                    });
-                /*try {
-                    Thread.sleep(200);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }*/
-            }
-        }).start();
+//
+
 //        DataPoint[] dataPoints2 = generateData();
 //        BarGraphSeries<DataPoint> series2 = new BarGraphSeries<>(dataPoints2);
 //        graph.addSeries(series2);
